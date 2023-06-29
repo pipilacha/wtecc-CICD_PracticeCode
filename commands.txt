@@ -1,1 +1,6 @@
 tkn pipeline start hello-pipeline --showlog -p repo-url="https://github.com/ibm-developer-skills-network/wtecc-CICD_PracticeCode.git" -p branch="main" -p message="Hello Git"
+tkn tt ls #lists trigger templates created
+tkn tb ls #lists trigger bindings created
+tkn pr ls #lsists pipeline runs created
+tkn pr logs --last #shows logs for the lastest run, if --last flag is not especified the name of the run must be passed
+tkn el ls #lists event listeners created
