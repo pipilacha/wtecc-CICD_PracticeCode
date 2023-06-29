@@ -4,3 +4,10 @@ tkn tb ls #lists trigger bindings created
 tkn pr ls #lsists pipeline runs created
 tkn pr logs --last #shows logs for the lastest run, if --last flag is not especified the name of the run must be passed
 tkn el ls #lists event listeners created
+
+#startting a pipeline and mapping the pvc with the workspace, when running manually without trigger and event
+tkn pipeline start cd-pipeline \
+    -p repo-url="https://github.com/ibm-developer-skills-network/wtecc-CICD_PracticeCode.git" \
+    -p branch="main" \
+    -w name=pipeline-workspace,claimName=pipelinerun-pvc \
+    --showlog
