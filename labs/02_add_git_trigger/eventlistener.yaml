@@ -8,4 +8,4 @@ spec:
     - bindings:
       - ref: cd-binding
       template:
-        ref: cd-gittemplate
+        ref: cd-template
